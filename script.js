@@ -18,6 +18,7 @@ if(score >1)
         if(! guessNumber)
             {
                 message.textContent = 'Please enter the value between 1 and 20;';
+                console.log(e);
             }
         else if(guessNumber === secretNumber)
             {
