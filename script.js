@@ -27,6 +27,13 @@ if(score >1)
                 highscore = score;
                 message.textContent = 'You Won 🏆';
                 checkButton.disabled = true;
+                document.addEventListener('keydown', function (e){
+                    console.log(e);
+                    if(e.key === 'Enter')
+                        {
+                            checkFunction();
+                        }
+                    });
                     if(score > highscore)
                         {
                             highscoreLabel.textContent = score;
