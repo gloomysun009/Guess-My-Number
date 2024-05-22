@@ -52,6 +52,7 @@ const checkFunction = function(){
             message.textContent = "Game Over 🥲";
             document.removeEventListener("keydown", enter);
             highscoreLabel.textContent = 0;
+            scoreLabel.textContent = 0;
         }
 };
 
